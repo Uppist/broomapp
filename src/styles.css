@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  /* padding-top: 10px; */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #fff;
+  padding: 0.75rem 0; /* Reduced padding for a tighter look */
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  /* border-bottom: 2px solid #007bff; Blue bottom border */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar-logo img {
+  height: 50px; /* Adjusted to match the screenshot's logo size */
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem; /* Reduced gap for more compact spacing */
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navbar-links li a:hover {
+  color: #007bff; /* Blue hover effect */
+}
+
+.navbar-button {
+  display: flex;
+  align-items: center;
+}
+
+.join-waitlist-btn {
+  background-color: #00a8a8; /* Teal color matching the screenshot */
+  color: #fff;
+  border: none;
+  padding: 0.4rem 1.2rem; /* Adjusted padding for a smaller, tighter button */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  font-weight: 500;
+  border-radius: 8px; /* Slightly more rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  line-height: normal;
+}
+
+.join-waitlist-btn:hover {
+  background-color: #008b8b; /* Slightly darker teal on hover */
+}
+
+/* Ensure no pseudo-elements add unexpected content */
+.join-waitlist-btn::before,
+.join-waitlist-btn::after {
+  content: none;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #fff;
+  padding: 0.75rem 0;
+  width: 100%;
+  border-bottom: 2px solid #007bff;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navbar-links li a:hover {
+  color: #007bff;
+}
+
+.navbar-button {
+  display: flex;
+  align-items: center;
+}
+
+.join-waitlist-btn {
+  background-color: #00a8a8;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  line-height: normal;
+}
+
+.join-waitlist-btn:hover {
+  background-color: #008b8b;
+}
+
+.join-waitlist-btn::before,
+.join-waitlist-btn::after {
+  content: none;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-color: #e6f4f4; /* Light teal background */
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #00a8a8; /* Teal color for the heading */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.hero-image {
+  max-width: 40%;
+}
+
+.hero-image img {
+  width: 100%;
+  /* transform: rotate(-30deg); Tilt the iPhone image */
+}
+
+/* Features Section Styles */
+.features {
+  background-color: #fff;
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.features-container h2 {
+  font-size: 2rem;
+  color: #007bff; /* Blue color for the heading */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+
+.feature-item {
+  display: flex;
+  flex-direction: row; /* Horizontal layout for icon and text */
+  align-items: flex-start; /* Align items at the top */
+  gap: 1rem; /* Space between icon and text */
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+/* Group the h3 and p elements together vertically */
+.feature-item h3,
+.feature-item p {
+  flex: 1; /* Allow the text to take up the remaining space */
+}
+
+.feature-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem; /* Space between h3 and p */
+}
+
+/* Benefits Section Styles */
+.benefits {
+  background-color: #1e3a8a; /* Dark blue background */
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.benefits-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.benefits-text {
+  max-width: 50%;
+}
+
+.benefits-text h2 {
+  font-size: 2.5rem;
+  color: #fff; /* White text for the heading */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.benefits-text p {
+  font-size: 1.1rem;
+  color: #fff; /* White text for the description */
+  line-height: 1.8;
+}
+
+.benefits-image {
+  max-width: 40%;
+}
+
+.benefits-image img {
+  width: 100%;
+}
+
+/* AppStore Section Styles */
+.appstore {
+  background-color: #fff;
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.appstore-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.appstore-text {
+  max-width: 50%;
+}
+
+.appstore-text h2 {
+  font-size: 2.5rem;
+  color: #1e3a8a; /* Dark blue text for the heading */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.appstore-text p {
+  font-size: 1.1rem;
+  color: #666; /* Gray text for the subheading */
+  margin-bottom: 1.5rem;
+}
+
+.appstore-text .join-waitlist-btn {
+  margin-bottom: 1.5rem; /* Space between the button and store buttons */
+}
+
+.store-buttons {
+  display: flex;
+  gap: 1rem; /* Space between App Store and Google Play buttons */
+}
+
+.store-button {
+  height: 40px; /* Adjust based on your image size */
+}
+
+.appstore-image {
+  max-width: 40%;
+}
+
+.appstore-image img {
+  width: 100%;
+}
+
+/* .feature-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.feature-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #666;
+} */
