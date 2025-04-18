@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import logo from '../assets/logo.jpg'; // Adjust based on your logo file
 
 const Navbar = () => {
+
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'Features', href: '#features' },
