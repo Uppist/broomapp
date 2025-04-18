@@ -439,6 +439,59 @@ body::-webkit-scrollbar {
   border-top: 1px solid #e0e0e0; /* Subtle divider */
 }
 
+/* About Section Styles */
+.about {
+  background-color: #fff;
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 45%;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure image fits without distortion */
+}
+
+.about-text {
+  flex: 1;
+  max-width: 50%;
+  padding-left: 2rem;
+}
+
+.about-text blockquote {
+  font-size: 1.2rem;
+  color: #00a8a8; /* Teal color */
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.about-text .about-author {
+  font-size: 1.1rem;
+  color: #00a8a8; /* Teal color */
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.about-text .about-title {
+  font-size: 1rem;
+  color: #00a8a8; /* Teal color */
+}
+
 /* .feature-item p {
   font-size: 1rem;
   color: #666;

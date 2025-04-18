@@ -7,6 +7,7 @@ import Home from './components/Home.jsx';
 import Benefits from './components/Benefits.jsx';
 import AppStore from './components/AppStore.jsx';
 import FAQ from './components/FAQ.jsx';
+import About from './components/About.jsx';
 
 function App() {
   const features = useRef (null)
@@ -23,6 +24,7 @@ function App() {
     <Benefits />
     <AppStore />
     <FAQ />
+    <About />
   </div>
 }
 
