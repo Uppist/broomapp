@@ -8,6 +8,7 @@ import Benefits from './components/Benefits.jsx';
 import AppStore from './components/AppStore.jsx';
 import FAQ from './components/FAQ.jsx';
 import About from './components/About.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
   const features = useRef (null)
@@ -25,6 +26,7 @@ function App() {
     <AppStore />
     <FAQ />
     <About />
+    <Footer />
   </div>
 }
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -21,78 +23,13 @@ body::-webkit-scrollbar {
 /* Navbar Styles */
 .navbar {
   background-color: #fff;
-  padding: 0.75rem 0; /* Reduced padding for a tighter look */
-  width: 100%;
-  position: fixed;
-  z-index: 1000;
-  /* border-bottom: 2px solid #007bff; Blue bottom border */
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.navbar-logo img {
-  height: 50px; /* Adjusted to match the screenshot's logo size */
-}
-
-.navbar-links {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem; /* Reduced gap for more compact spacing */
-}
-
-.navbar-links li a {
-  text-decoration: none;
-  color: #000;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.navbar-links li a:hover {
-  color: #007bff; /* Blue hover effect */
-}
-
-.navbar-button {
-  display: flex;
-  align-items: center;
-}
-
-.join-waitlist-btn {
-  background-color: #00a8a8; /* Teal color matching the screenshot */
-  color: #fff;
-  border: none;
-  padding: 0.4rem 1.2rem; /* Adjusted padding for a smaller, tighter button */
-  font-size: 0.9rem; /* Slightly smaller font size */
-  font-weight: 500;
-  border-radius: 8px; /* Slightly more rounded corners */
-  cursor: pointer;
-  transition: background-color 0.3s;
-  text-align: center;
-  line-height: normal;
-}
-
-.join-waitlist-btn:hover {
-  background-color: #008b8b; /* Slightly darker teal on hover */
-}
-
-/* Ensure no pseudo-elements add unexpected content */
-.join-waitlist-btn::before,
-.join-waitlist-btn::after {
-  content: none;
-}
-
-/* Navbar Styles */
-.navbar {
-  background-color: #fff;
   padding: 0.75rem 0;
   width: 100%;
-  border-bottom: 2px solid #007bff;
+  border-bottom: 2px solid #007A33;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .navbar-container {
@@ -131,17 +68,18 @@ body::-webkit-scrollbar {
 }
 
 .join-waitlist-btn {
-  background-color: #00a8a8;
+  background-color: #008080;
   color: #fff;
   border: none;
-  padding: 0.4rem 1.2rem;
+  padding: 8px 35px;
   font-size: 0.9rem;
   font-weight: 500;
-  border-radius: 8px;
+  border-radius: 11px;
   cursor: pointer;
   transition: background-color 0.3s;
   text-align: center;
   line-height: normal;
+  height: 40px;
 }
 
 .join-waitlist-btn:hover {
@@ -174,11 +112,12 @@ body::-webkit-scrollbar {
 }
 
 .hero-text h1 {
-  font-size: 2.5rem;
-  color: #00a8a8; /* Teal color for the heading */
-  font-weight: 700;
+  font-size: 65px;
+  color: #008080; /* Teal color for the heading */
+  font-weight: 900;
   line-height: 1.2;
   margin-bottom: 1rem;
+  font-family: 'Bricolage Grotesque', sans-serif;
 }
 
 .hero-text p {
@@ -192,7 +131,8 @@ body::-webkit-scrollbar {
 }
 
 .hero-image img {
-  width: 100%;
+  width: 126%;
+  height: 70%;
   /* transform: rotate(-30deg); Tilt the iPhone image */
 }
 
@@ -473,24 +413,187 @@ body::-webkit-scrollbar {
 }
 
 .about-text blockquote {
-  font-size: 1.2rem;
+  font-size: 30px;
   color: #00a8a8; /* Teal color */
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  font-style: italic;
+  font-family: 'Bricolage Grotesque', sans-serif;;
 }
 
 .about-text .about-author {
   font-size: 1.1rem;
-  color: #00a8a8; /* Teal color */
+  color: #1b1a1a; /* Teal color */
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 .about-text .about-title {
   font-size: 1rem;
-  color: #00a8a8; /* Teal color */
+  color: #1b1a1a; /* Teal color */
 }
+
+/* Footer Section Styles */
+.footer {
+  background-color: #1b1a1a; /* Black background */
+  color: #fff;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.footer-top {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.footer-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 1rem;
+  margin-left: 70px;
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-info-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.footer-info-item p {
+  font-size: 0.9rem;
+}
+
+.footer-info-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-info-item a:hover {
+  text-decoration: underline;
+}
+
+.footer-divider {
+  background-color: #00a8a8; /* Teal divider */
+  height: 2px;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.footer-logo {
+  width: 250px; /* Adjust based on logo2.jpg size */
+  height: 130px;
+}
+
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+.footer-social h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #00a8a8; /* Teal background */
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-copyright p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-designed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.time {
+  margin-left: 20px;
+}
+
+/* .uppist-icon {
+  width: 16px;
+  height: 16px;
+} */
 
 /* .feature-item p {
   font-size: 1rem;
