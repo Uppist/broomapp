@@ -9,10 +9,12 @@ const Benefits = () => {
         <div className="benefits-text">
           <h2>What is The Broom App?</h2>
           <p>
-            The Broom App simplifies access to on-demand cleaning services, making it more convenient for every user.
+            The Broom App simplifies access to on-demand <br />cleaning services, making it more convenient 
+            <br />for everyday users.
             <br />
             <br />
-            Our platform instantly connects individuals in need of cleaning services with trusted, thoroughly vetted providers.
+            Our platform instantly connects individuals in need <br />
+            of cleaning services with trusted, thoroughly vetted <br /> providers.
           </p>
         </div>
 

@@ -43,7 +43,7 @@ const FAQ = () => {
                   aria-expanded={openIndex === index}
                   aria-controls={`faq-answer-${index}`}
                 >
-                  {openIndex === index ? 'v' : '>'}
+                  {openIndex === index ? '>' : '>'}
                 </button>
               </div>
               <div

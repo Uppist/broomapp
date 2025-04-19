@@ -8,7 +8,7 @@ const Features = () => {
       description: '',
     },
     {
-      title: 'Soft marketplace that allows service providers to set up shop on the app.',
+      title: 'Access to various types of cleaning services.',
       description: '',
     },
     {
