@@ -16,16 +16,18 @@ const Navbar = () => {
         {/* Logo (image with icon and text) */}
         <div className="navbar-logo">
           <img src={logo} alt="The Broom App Logo" />
-        </div>
-
-        {/* Navigation Links */}
-        <ul className="navbar-links">
+          {/* Navigation Links */}
+          <ul className="navbar-links">
           {navLinks.map((link) => (
             <li key={link.name}>
               <a href={link.href}>{link.name}</a>
             </li>
           ))}
-        </ul>
+          </ul>
+        </div>
+
+
+
 
         {/* Join Waitlist Button */}
         <div className="navbar-button">

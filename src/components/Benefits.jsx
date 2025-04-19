@@ -1,5 +1,5 @@
 import React from 'react';
-import iphone from '../assets/iphone13.jpg'; // Import the iPhone image
+import iphone from '../assets/iphone13.png'; // Import the iPhone image
 
 const Benefits = () => {
   return (

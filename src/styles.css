@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 * {
   margin: 0;
@@ -23,9 +24,8 @@ body::-webkit-scrollbar {
 /* Navbar Styles */
 .navbar {
   background-color: #fff;
-  padding: 0.75rem 0;
+  padding: 16px 80px;
   width: 100%;
-  border-bottom: 2px solid #007A33;
   position: fixed;
   top: 0;
   left: 0;
@@ -41,6 +41,12 @@ body::-webkit-scrollbar {
   padding: 0 1rem;
 }
 
+.navbar-logo {
+  display: flex  ;
+  align-items: center;
+  gap: 66px;
+}
+
 .navbar-logo img {
   height: 50px;
 }
@@ -49,17 +55,15 @@ body::-webkit-scrollbar {
   display: flex;
   list-style: none;
   gap: 1.5rem;
+  margin-right: 50px;
 }
 
 .navbar-links li a {
   text-decoration: none;
-  color: #000;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.navbar-links li a:hover {
-  color: #007bff;
+  color: #2B2B2B;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Source Sans 3";
 }
 
 .navbar-button {
@@ -71,15 +75,15 @@ body::-webkit-scrollbar {
   background-color: #008080;
   color: #fff;
   border: none;
-  padding: 8px 35px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  border-radius: 11px;
+  padding: 18px 56px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
   text-align: center;
   line-height: normal;
-  height: 40px;
+  font-family: 'Source Sans 3';
 }
 
 .join-waitlist-btn:hover {
@@ -105,6 +109,7 @@ body::-webkit-scrollbar {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+  margin-top: 100px;
 }
 
 .hero-text {
@@ -112,22 +117,24 @@ body::-webkit-scrollbar {
 }
 
 .hero-text h1 {
-  font-size: 65px;
+  font-size: 60px;
   color: #008080; /* Teal color for the heading */
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1.2;
   margin-bottom: 1rem;
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Bricolage Grotesque';
 }
 
 .hero-text p {
-  font-size: 1.1rem;
-  color: #333;
+  font-family: "Source Sans 3";
+  font-size: 24px;
+  color: #52525B;
   margin-bottom: 1.5rem;
+  font-weight: 400;
 }
 
 .hero-image {
-  max-width: 40%;
+  /* max-width: 40%; */
 }
 
 .hero-image img {
@@ -150,11 +157,12 @@ body::-webkit-scrollbar {
 }
 
 .features-container h2 {
-  font-size: 2rem;
-  color: #02488F; /* Blue color for the heading */
-  font-weight: 700;
+  font-family: "Bricolage Grotesque";
+  font-size: 42px;
+  color: #02488F;
+  font-weight: 600;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 50px;
 }
 
 .features-grid {
@@ -184,57 +192,93 @@ body::-webkit-scrollbar {
 }
 
 .feature-item h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 700;
   color: #333;
+  font-family: "Source Sans 3";
   margin-bottom: 0.5rem; /* Space between h3 and p */
 }
 
 /* Benefits Section Styles */
 .benefits {
-  background-color: #1e3a8a; /* Dark blue background */
+  background-color: #02488F; /* Dark blue background */
   padding: 4rem 0;
   width: 100%;
 }
 
+.disk {
+  font-family: "Source Sans 3";
+  font-weight: 400;
+  font-size: 22px;
+}
+
 .benefits-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
-  padding: 30px 100px;
+  /* padding-left: 90px; */
 }
 
 .benefits-text {
   max-width: 50%;
+  margin-left: 100px;
 }
 
 .benefits-text h2 {
-  font-size: 2.5rem;
+  font-size: 42px;
   color: #fff; /* White text for the heading */
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
   margin-bottom: 1rem;
+  font-family: "Bricolage Grotesque";
+  width: 500px;
 }
 
 .benefits-text p {
-  font-size: 1.1rem;
+  font-size: 24px;
+  font-weight: 400;
   color: #fff; /* White text for the description */
-  line-height: 1.8;
+  line-height: 28px;
+  font-family: "Source Sans 3";
 }
 
 .benefits-image {
-  max-width: 40%;
+  /* max-width: 40%; */
 }
 
 .benefits-image img {
-  width: 100%;
+  width: 700px;
 }
+
+/* Payment section styles */
+
+.transactions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 60px;
+}
+
+.transactions-icon {
+  background-color: yellow;
+}
+
+.transactions-image {
+  background-color: blue;
+}
+
 
 /* AppStore Section Styles */
 .appstore {
-  background-color: #fff;
+  background-color: #F9FAFB;
   padding: 4rem 0;
   width: 100%;
 }
@@ -245,7 +289,7 @@ body::-webkit-scrollbar {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 25px;
 }
 
 .appstore-text {
@@ -253,17 +297,21 @@ body::-webkit-scrollbar {
 }
 
 .appstore-text h2 {
-  font-size: 2.5rem;
-  color: #1e3a8a; /* Dark blue text for the heading */
-  font-weight: 700;
-  line-height: 1.2;
+  font-size: 42px;
+  color: #101828; /* Dark blue text for the heading */
+  font-weight: 600;
+  line-height: 48px;
   margin-bottom: 1rem;
+  font-family: "Bricolage Grotesque";
 }
 
 .appstore-text p {
-  font-size: 1.1rem;
-  color: #666; /* Gray text for the subheading */
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 24px;
+  color: #667085; /* Gray text for the subheading */
   margin-bottom: 1.5rem;
+  font-family: "Source Sans 3";
 }
 
 .appstore-text .join-waitlist-btn {
@@ -273,6 +321,7 @@ body::-webkit-scrollbar {
 .store-buttons {
   display: flex;
   gap: 1rem; /* Space between App Store and Google Play buttons */
+  margin-top: 30px;
 }
 
 .store-button {
@@ -303,23 +352,30 @@ body::-webkit-scrollbar {
 
 .faq-container h2 {
   font-size: 2rem;
-  color: #1e3a8a;
-  font-weight: 700;
-  margin-bottom: 2rem;
+  color: #02488F;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: "Bricolage Grotesque";
 }
 
 .faq-list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .faq-item {
-  border: 2px solid #00a8a8; /* Teal border */
-  border-radius: 8px;
+  border: 2px solid #008080; /* Teal border */
+  border-radius: 15px;
   margin-left: 120px; /* Your addition */
   margin-right: 120px; /* Your addition */
   overflow: hidden; /* Ensure rounded corners are respected */
+  margin-bottom: 20px;
+  font-family: "Source Sans 3";
+  font-weight: 400;
+  font-size: 24px;
 }
 
 .faq-question {
@@ -381,18 +437,17 @@ body::-webkit-scrollbar {
 
 /* About Section Styles */
 .about {
-  background-color: #fff;
-  padding: 4rem 0;
+  background-color: #F9FAFB;
+  /* padding: 4rem 0; */
   width: 100%;
 }
 
 .about-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  /* margin: 0 auto; */
 }
 
 .about-image {
@@ -401,35 +456,40 @@ body::-webkit-scrollbar {
 }
 
 .about-image img {
-  width: 100%;
+  width: 120%;
   height: auto;
   object-fit: cover; /* Ensure image fits without distortion */
+  display: flex;
 }
 
 .about-text {
   flex: 1;
-  max-width: 50%;
-  padding-left: 2rem;
+  max-width: 75%;
+  padding-left: 160px;
 }
 
 .about-text blockquote {
-  font-size: 30px;
-  color: #00a8a8; /* Teal color */
+  font-size: 31px;
+  color: #008080; /* Teal color */
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  font-family: 'Bricolage Grotesque', sans-serif;;
+  font-family: 'Bricolage Grotesque';
+  font-weight: 400;
 }
 
 .about-text .about-author {
-  font-size: 1.1rem;
-  color: #1b1a1a; /* Teal color */
-  font-weight: 700;
+  font-size: 24px;
+  color: #667085; /* Teal color */
+  font-weight: 900;
   margin-bottom: 0.5rem;
+  font-family: "Source Sans 3";
 }
 
 .about-text .about-title {
-  font-size: 1rem;
-  color: #1b1a1a; /* Teal color */
+  font-size: 24px;
+  color: #667085; /* Teal color */
+  font-family: "Source Sans 3";
+  font-weight: 400;
 }
 
 /* Footer Section Styles */
@@ -472,10 +532,13 @@ body::-webkit-scrollbar {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  font-family: "Bricolage Grotesque";
 }
 
 .footer-info-item p {
-  font-size: 0.9rem;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Source Sans 3";
 }
 
 .footer-info-item a {
@@ -515,8 +578,8 @@ body::-webkit-scrollbar {
 }
 
 .footer-logo {
-  width: 250px; /* Adjust based on logo2.jpg size */
-  height: 130px;
+  width: 244px;
+  height: 111.34px;
 }
 
 .footer-links {

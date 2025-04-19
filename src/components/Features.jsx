@@ -29,8 +29,10 @@ const Features = () => {
           {featuresList.map((feature, index) => (
             <div key={index} className="feature-item">
               <img src={icon} alt="Feature Icon" className="feature-icon" />
+              <div className='disk'>
               <h3>{feature.title}</h3>
               {feature.description && <p>{feature.description}</p>}
+              </div>
             </div>
           ))}
         </div>
