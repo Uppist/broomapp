@@ -26,9 +26,6 @@ const Navbar = () => {
           </ul>
         </div>
 
-
-
-
         {/* Join Waitlist Button */}
         <div className="navbar-button">
           <button className="join-waitlist-btn">Join Waitlist</button>
