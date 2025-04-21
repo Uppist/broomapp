@@ -1,5 +1,5 @@
 import React from 'react';
-import logo2 from '../assets/logo2.png';
+import logo2 from '../assets/broomapp-logo2.png';
 import locationIcon from '../assets/location-icon.svg';
 import contactIcon from '../assets/contact-icon.svg';
 import hoursIcon from '../assets/hours-icon.svg';

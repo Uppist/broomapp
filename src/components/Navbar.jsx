@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../assets/logo.jpg'; // Adjust based on your logo file
+import logo from '../assets/broomapp-logo.png'; // Adjust based on your logo file
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
