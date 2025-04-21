@@ -35,10 +35,9 @@ body::-webkit-scrollbar {
 }
 
 .navbar-container {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -145,7 +144,8 @@ body::-webkit-scrollbar {
   }
 
   .navbar-hamburger {
-    display: block; /* Show hamburger icon on mobile */
+    display: flex; /* Show hamburger icon on mobile */
+    padding-left: 400px;
   }
 
   /* Dropdown Menu Styles (when menu is open) */
@@ -370,7 +370,7 @@ body::-webkit-scrollbar {
   }
 
   .features-container h2 {
-    font-size: 32px; /* Smaller font size for mobile */
+    font-size: 25px; /* Smaller font size for mobile */
     margin-bottom: 30px; /* Reduced margin */
   }
 
@@ -380,7 +380,7 @@ body::-webkit-scrollbar {
   }
 
   .feature-item h3 {
-    font-size: 20px; /* Smaller font size for mobile */
+    font-size: 18.5px; /* Smaller font size for mobile */
     color: #000000; /* Black color as per design */
   }
 
@@ -465,10 +465,11 @@ body::-webkit-scrollbar {
   }
 
   .benefits-text h2 {
-    font-size: 32px; /* Smaller font size for mobile */
+    font-size: 25px; /* Smaller font size for mobile */
     width: 100%; /* Full width for mobile */
     line-height: 38px; /* Adjusted line height */
     margin-bottom: 20px;
+    text-align: left;
   }
 
   .benefits-text p {
