@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
 }
 
 .navbar-logo {
-  display: flex  ;
+  display: flex;
   align-items: center;
   gap: 66px;
 }
@@ -93,6 +93,107 @@ body::-webkit-scrollbar {
 .join-waitlist-btn::before,
 .join-waitlist-btn::after {
   content: none;
+}
+
+/* Hamburger Menu Styles */
+.navbar-hamburger {
+  display: none; /* Hidden on desktop */
+  cursor: pointer;
+}
+
+.navbar-hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #000000;
+  border-radius: 2px;
+}
+
+.navbar-hamburger-x {
+  font-size: 30px;
+  color: #000000;
+  line-height: 30px;
+}
+
+/* Mobile Responsiveness for Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 20px; /* Reduced padding for mobile */
+  }
+
+  .navbar-container {
+    padding: 0; /* Remove extra padding */
+  }
+
+  .navbar-logo {
+    gap: 0; /* Remove gap since links are hidden */
+  }
+
+  .navbar-links {
+    display: none; /* Hidden by default on mobile */
+  }
+
+  .navbar-button {
+    display: none; /* Hidden by default on mobile */
+  }
+
+  .navbar-hamburger {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  /* Dropdown Menu Styles (when menu is open) */
+  .navbar-links-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 82px; /* Below the navbar (16px padding + 50px logo height + 16px padding) */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #F5E7D9;
+    min-height: 210px; /* Ensure all links (including FAQ) are visible */
+    z-index: 999;
+  }
+
+  .navbar-links-open li {
+    border-bottom: 1px solid #F5E7D9;
+    padding: 10px 20px; /* Reduced vertical padding to decrease spacing */
+  }
+
+  .navbar-links-open li a {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Source Sans 3";
+  }
+
+  .navbar-button-open {
+    display: block;
+    position: absolute;
+    top: calc(82px + 4 * 51px); /* Below the 4 links (Home, Features, Benefits, FAQ: 82px navbar + 4 * (10px padding + 1px border + 10px padding + 30px content)) */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #F5E7D9;
+    border-top: none;
+    z-index: 999;
+  }
+
+  .navbar-button-open .join-waitlist-btn {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: block    block;
+  }
 }
 
 /* Hero Section Styles */
@@ -227,11 +328,6 @@ body::-webkit-scrollbar {
 
   .feature-item p {
     color: #667085; /* Gray color as per design */
-  }
-
-  .feature-icon {
-    /* Size remains the same, but ensure color matches design */
-    /* Assuming the icon image itself has the correct teal color (#008080) */
   }
 }
 

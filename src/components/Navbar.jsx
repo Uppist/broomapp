@@ -1,7 +1,8 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/logo.jpg'; // Adjust based on your logo file
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
     { name: 'Home', href: '#home' },
@@ -10,24 +11,44 @@ const Navbar = () => {
     { name: 'FAQ', href: '#faq' },
   ];
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Logo (image with icon and text) */}
+        {/* Logo */}
         <div className="navbar-logo">
           <img src={logo} alt="The Broom App Logo" />
-          {/* Navigation Links */}
-          <ul className="navbar-links">
-          {navLinks.map((link) => (
-            <li key={link.name}>
-              <a href={link.href}>{link.name}</a>
-            </li>
-          ))}
-          </ul>
         </div>
 
-        {/* Join Waitlist Button */}
-        <div className="navbar-button">
+        {/* Hamburger Icon (visible on mobile) */}
+        <div className="navbar-hamburger" onClick={toggleMenu}>
+          {isMenuOpen ? (
+            <span className="navbar-hamburger-x">×</span>
+          ) : (
+            <span className="navbar-hamburger-icon">
+              <div className="bar"></div>
+              <div className="bar"></div>
+              <div className="bar"></div>
+            </span>
+          )}
+        </div>
+
+        {/* Navigation Links (visible on desktop, hidden on mobile unless menu is open) */}
+        <ul className={`navbar-links ${isMenuOpen ? 'navbar-links-open' : ''}`}>
+          {navLinks.map((link) => (
+            <li key={link.name}>
+              <a href={link.href} onClick={() => setIsMenuOpen(false)}>
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        {/* Join Waitlist Button (visible on desktop, hidden on mobile unless menu is open) */}
+        <div className={`navbar-button ${isMenuOpen ? 'navbar-button-open' : ''}`}>
           <button className="join-waitlist-btn">Join Waitlist</button>
         </div>
       </div>
