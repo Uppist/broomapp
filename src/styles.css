@@ -399,7 +399,7 @@ body::-webkit-scrollbar {
     align-items: center;
     background-color: #EAECFF;
     height: 400px;
-    width: 80%;
+    width: 90%;
     border-radius: 20px;
 }
 
@@ -415,15 +415,20 @@ body::-webkit-scrollbar {
   }
 
   .payment-text-bg-color {
-    width: 100%; /* Full width for mobile */
-    height: 150px; /* Reduced height */
     padding: 20px; /* Unified padding */
     gap: 10px; /* Reduced gap */
+    display: grid;
+    align-items: center;
+    background-color: #008080;
+    height: 400px;
+    width: 90%;
+    border-radius: 20px;
   }
 
   .payment-text-bg-color p {
     font-size: 18px; /* Smaller font size */
     padding: 0; /* Remove excessive padding */
+    padding-bottom: 50px;
   }
 
   .payment-text-bg-color-icon2 {
@@ -437,9 +442,12 @@ body::-webkit-scrollbar {
 
   .payments-text-right {
     flex-direction: column; /* Stack image and text vertically */
-    width: 100%; /* Full width for mobile */
+    width: 90%; /* Full width for mobile */
     height: 600px; /* Reduced height */
-    padding: 20px; /* Unified padding */
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 100px;
+    padding-bottom: 0;
     gap: 20px; /* Reduced gap */
   }
 
@@ -453,26 +461,40 @@ body::-webkit-scrollbar {
   .payments-text-right p {
     font-size: 18px; /* Smaller font size */
     margin-left: 0; /* Remove margin */
+    padding-bottom: 50px;
+    text-align: center;
   }
 
   .payments-text-right2 {
     flex-direction: column; /* Stack image and text vertically */
     width: 100%; /* Full width for mobile */
-    height: 250px; /* Reduced height */
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #EBF5F5;
+    border-radius: 20px;
     padding: 20px; /* Unified padding */
-    gap: 20px; /* Reduced gap */
+    gap: 10px; /* Reduced gap */
+    align-items: center;
+    width: 90%;
+    border-radius: 20px;
+    padding-bottom: 30px;
   }
 
   .payments-text-right2 img {
     max-width: 90%; /* Nearly full width */
     height: auto; /* Maintain aspect ratio */
-    padding-top: 0; /* Remove padding */
+    padding-top: 70px; /* Remove padding */
     margin-left: 0; /* Remove margin */
+    padding-bottom: 0;
   }
 
   .payments-text-right2 p {
-    font-size: 18px; /* Smaller font size */
+    font-size: 20px; /* Smaller font size */
     margin-left: 0; /* Remove margin */
+    padding-top: 85px;
+    text-align: center;
+    font-weight: 400;
   }
 }
 
@@ -589,10 +611,9 @@ body::-webkit-scrollbar {
   }
 
   .store-buttons {
-    justify-content: center; /* Center buttons */
+    justify-content: left; /* Center buttons */
     gap: 20px; /* Adjust spacing between buttons */
     margin-top: 0; /* Remove extra margin */
-    margin-right: 130px
   }
 
   .store-button {
