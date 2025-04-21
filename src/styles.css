@@ -35,9 +35,10 @@ body::-webkit-scrollbar {
 }
 
 .navbar-container {
-  display: grid;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -144,8 +145,7 @@ body::-webkit-scrollbar {
   }
 
   .navbar-hamburger {
-    display: flex; /* Show hamburger icon on mobile */
-    padding-left: 400px;
+    display: block; /* Show hamburger icon on mobile */
   }
 
   /* Dropdown Menu Styles (when menu is open) */
@@ -252,6 +252,7 @@ body::-webkit-scrollbar {
   .hero {
     background-color: #e6f4f4; /* Light teal background, same as desktop */
     padding: 20px 0; /* Reduced padding to fit content */
+    padding-bottom: 0;
   }
 
   .hero-container {
@@ -270,26 +271,33 @@ body::-webkit-scrollbar {
   }
 
   .hero-text h1 {
-    font-size: 24px; /* Smaller font size to fit */
-    line-height: 28px; /* Adjusted line height */
+    font-size: 35px; /* Smaller font size to fit */
+    line-height: 40px; /* Adjusted line height */
     margin-bottom: 0; /* Controlled by flex gap */
+    margin-top: 150px;
+    text-align: left;
+    padding: 0 50px;
   }
 
   .hero-text p {
-    font-size: 14px; /* Smaller font size to fit */
+    font-size: 16px; /* Smaller font size to fit */
     color: #6B7280; /* Darker gray as per design */
     line-height: 20px; /* Adjusted line height */
     margin-bottom: 0; /* Controlled by flex gap */
+    text-align: left;
+    padding: 10px 50px;
   }
 
   .hero-text .join-waitlist-btn {
-    width: 90%; /* Nearly full width */
-    margin: 0 auto;
+    width: 60%; /* Nearly full width */
+    margin: 0;
     padding: 10px; /* Reduced padding to fit */
     font-size: 16px; /* Smaller font size to fit */
     font-weight: 700;
     border-radius: 10px;
+    margin-left: 50px;
     display: block; /* Ensure button is block-level for centering */
+    height: 50px;
   }
 
   .hero-image {
@@ -297,9 +305,11 @@ body::-webkit-scrollbar {
   }
 
   .hero-image img {
-    width: 100%; /* Fit within container, avoid overflow */
+    width: 350px; /* Fit within container, avoid overflow */
     height: auto; /* Maintain aspect ratio */
-    transform: rotate(-15deg); /* Rotate image as per design */
+    padding-bottom: 0;
+    padding-top: 50px;
+    align-items: center;
   }
 }
 
