@@ -32,6 +32,8 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   z-index: 1000;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .navbar-container {
@@ -253,6 +255,8 @@ body::-webkit-scrollbar {
     background-color: #e6f4f4; /* Light teal background, same as desktop */
     padding: 20px 0; /* Reduced padding to fit content */
     padding-bottom: 0;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .hero-container {
