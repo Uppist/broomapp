@@ -254,6 +254,49 @@ body::-webkit-scrollbar {
   width: 700px;
 }
 
+/* Mobile Responsiveness for Benefits */
+@media (max-width: 768px) {
+  .benefits {
+    padding: 30px 0; /* Reduced padding for mobile */
+    height: auto; /* Auto height to fit content */
+  }
+
+  .benefits-container {
+    flex-direction: column; /* Stack text and image vertically */
+    padding-left: 0; /* Remove left padding */
+    padding: 0 20px; /* Add side padding */
+    gap: 30px; /* Spacing between elements */
+  }
+
+  .benefits-text {
+    max-width: 100%; /* Full width for mobile */
+    margin-left: 0; /* Remove left margin */
+    text-align: left; /* Left-align text */
+  }
+
+  .benefits-text h2 {
+    font-size: 32px; /* Smaller font size for mobile */
+    width: 100%; /* Full width for mobile */
+    line-height: 38px; /* Adjusted line height */
+    margin-bottom: 20px;
+  }
+
+  .benefits-text p {
+    font-size: 18px; /* Smaller font size for mobile */
+    line-height: 24px; /* Adjusted line height */
+  }
+
+  .benefits-image {
+    max-width: 90%; /* Nearly full width for mobile */
+  }
+
+  .benefits-image img {
+    width: 100%; /* Fit within container, avoid overflow */
+    height: auto; /* Maintain aspect ratio */
+    transform: rotate(-15deg); /* Rotate image as per design */
+  }
+}
+
 /* Payments Section Styles */
 .payments {
   background-color: #fff;
@@ -389,7 +432,7 @@ body::-webkit-scrollbar {
 
   .payments-row {
     flex-direction: column; /* Stack elements vertically */
-    gap: 20px; /* Reduced gap between elements */
+    gap: 50px; /* Reduced gap between elements */
   }
 
   .payments-text-left {
