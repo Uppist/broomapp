@@ -9,6 +9,8 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -32,8 +34,6 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   z-index: 1000;
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 .navbar-container {
@@ -103,8 +103,6 @@ body::-webkit-scrollbar {
 .navbar-hamburger {
   display: none; /* Hidden on desktop */
   cursor: pointer;
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 .navbar-hamburger-icon {
@@ -130,8 +128,6 @@ body::-webkit-scrollbar {
 @media (max-width: 768px) {
   .navbar {
     padding: 16px 20px; /* Reduced padding for mobile */
-    max-width: 100%;
-    overflow-x: hidden;
   }
 
   .navbar-container {
@@ -313,7 +309,7 @@ body::-webkit-scrollbar {
   }
 
   .hero-image img {
-    width: 350px; /* Fit within container, avoid overflow */
+    width: 250px; /* Fit within container, avoid overflow */
     height: auto; /* Maintain aspect ratio */
     padding-bottom: 0;
     padding-top: 50px;
