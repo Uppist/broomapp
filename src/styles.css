@@ -57,7 +57,7 @@ body::-webkit-scrollbar {
   display: flex;
   list-style: none;
   gap: 1.5rem;
-  margin-right: 50px;
+  padding-right: 350px;
 }
 
 .navbar-links li a {
@@ -201,7 +201,7 @@ body::-webkit-scrollbar {
 /* Hero Section Styles */
 .hero {
   background-color: #e6f4f4; /* Light teal background */
-  padding: 4rem 0;
+  padding: 4rem 80px;
   width: 100%;
   padding-bottom: 0px;
 }
