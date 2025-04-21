@@ -135,9 +135,9 @@ body::-webkit-scrollbar {
   font-weight: 400;
 }
 
-.hero-image {
-  /* max-width: 40%; */
-}
+/* .hero-image {
+  max-width: 40%;
+} */
 
 .hero-image img {
   width: 126%;
@@ -376,6 +376,106 @@ body::-webkit-scrollbar {
   padding-left: 20px;
 }
 
+/* Mobile Responsiveness for Payments */
+@media (max-width: 768px) {
+  .payments {
+    padding: 30px 0; /* Reduced padding for mobile */
+  }
+
+  .payments-container {
+    padding: 0 20px; /* Adjust padding for mobile */
+    gap: 30px; /* Reduced gap between cards */
+  }
+
+  .payments-row {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px; /* Reduced gap between elements */
+  }
+
+  .payments-text-left {
+    padding: 20px; /* Unified padding */
+    gap: 10px; /* Reduced gap */
+    display: grid;
+    align-items: center;
+    background-color: #EAECFF;
+    height: 400px;
+    width: 80%;
+    border-radius: 20px;
+}
+
+  .payments-text-left img {
+    width: 137px;
+    height: 82px;
+  }
+
+  .payments-text-left p {
+    font-size: 18px; /* Smaller font size */
+    padding: 0; /* Remove excessive padding */
+    padding-bottom: 50px;
+  }
+
+  .payment-text-bg-color {
+    width: 100%; /* Full width for mobile */
+    height: 150px; /* Reduced height */
+    padding: 20px; /* Unified padding */
+    gap: 10px; /* Reduced gap */
+  }
+
+  .payment-text-bg-color p {
+    font-size: 18px; /* Smaller font size */
+    padding: 0; /* Remove excessive padding */
+  }
+
+  .payment-text-bg-color-icon2 {
+    padding-left: 0; /* Remove padding */
+  }
+
+  .payment-text-bg-color-icon2 img {
+    width: 40px; /* Smaller icon size */
+    height: 40px;
+  }
+
+  .payments-text-right {
+    flex-direction: column; /* Stack image and text vertically */
+    width: 100%; /* Full width for mobile */
+    height: 600px; /* Reduced height */
+    padding: 20px; /* Unified padding */
+    gap: 20px; /* Reduced gap */
+  }
+
+  .payments-text-right img {
+    max-width: 90%; /* Nearly full width */
+    height: auto; /* Maintain aspect ratio */
+    padding-top: 0; /* Remove padding */
+    margin-left: 0; /* Remove margin */
+  }
+
+  .payments-text-right p {
+    font-size: 18px; /* Smaller font size */
+    margin-left: 0; /* Remove margin */
+  }
+
+  .payments-text-right2 {
+    flex-direction: column; /* Stack image and text vertically */
+    width: 100%; /* Full width for mobile */
+    height: 250px; /* Reduced height */
+    padding: 20px; /* Unified padding */
+    gap: 20px; /* Reduced gap */
+  }
+
+  .payments-text-right2 img {
+    max-width: 90%; /* Nearly full width */
+    height: auto; /* Maintain aspect ratio */
+    padding-top: 0; /* Remove padding */
+    margin-left: 0; /* Remove margin */
+  }
+
+  .payments-text-right2 p {
+    font-size: 18px; /* Smaller font size */
+    margin-left: 0; /* Remove margin */
+  }
+}
+
 /* AppStore Section Styles */
 .appstore {
   background-color: #F9FAFB;
@@ -434,6 +534,80 @@ body::-webkit-scrollbar {
 
 .appstore-image img {
   width: 100%;
+}
+
+/* Mobile Responsiveness for AppStore */
+@media (max-width: 768px) {
+  .appstore {
+    padding: 30px 0; /* Reduced padding for mobile */
+  }
+
+  .appstore-container {
+    flex-direction: column; /* Stack text and image vertically */
+    padding: 0 20px; /* Adjust padding for mobile */
+    gap: 30px; /* Spacing between elements */
+    height: 866px;
+    padding: 20px 25px;
+    margin-top: 45px;
+  }
+
+  .appstore-text {
+    max-width: 100%; /* Full width for mobile */
+    text-align: center; /* Center text */
+  }
+
+  .appstore-text h2 {
+    font-size: 32px; /* Smaller font size for mobile */
+    line-height: 38px; /* Adjusted line height */
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .appstore-text p {
+    font-size: 18px; /* Smaller font size for mobile */
+    line-height: 24px; /* Adjusted line height */
+    margin-bottom: 30px; /* Adjust spacing before button */
+    text-align: left;
+  }
+
+  .appstore-text .join-waitlist-btn {
+    background-color: #008080; /* Teal background */
+    color: #fff; /* White text */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    /* width: 60%; Nearly full width */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    /* margin: 0 auto 20px; Center button, adjust spacing */
+  }
+
+  .join-waitlist-btn {
+    margin-right: 54%;
+    width: 200px;
+  }
+
+  .store-buttons {
+    justify-content: center; /* Center buttons */
+    gap: 20px; /* Adjust spacing between buttons */
+    margin-top: 0; /* Remove extra margin */
+    margin-right: 130px
+  }
+
+  .store-button {
+    width: 145px; /* Fixed width for mobile */
+    height: 46px; /* Fixed height for mobile */
+  }
+
+  .appstore-image {
+    max-width: 90%; /* Nearly full width for mobile */
+  }
+
+  .appstore-image img {
+    width: 100%; /* Fit within container */
+    height: auto; /* Maintain aspect ratio */
+  }
 }
 
 /* FAQ Section Styles */
@@ -543,6 +717,53 @@ body::-webkit-scrollbar {
   font-size: 18px;
 }
 
+/* Mobile Responsiveness for FAQ */
+@media (max-width: 768px) {
+  .faq {
+    padding-top: 30px; /* Reduced padding for mobile */
+    width: 100%; /* Full width to avoid overflow */
+    height: auto; /* Auto height to fit content */
+  }
+
+  .faq-container {
+    padding: 0 20px; /* Adjusted padding for mobile */
+    height: 700px; /* Auto height to fit content */
+  }
+
+  .faq-container h2 {
+    font-size: 32px; /* Smaller font size for mobile */
+    margin-bottom: 30px;
+    padding-top: 60px;
+  }
+
+  .faq-list {
+    width: 100%; /* Full width to avoid overflow */
+    margin-left: 0;
+    margin-right: 0;
+    gap: 20px; /* Reduced gap between items */
+  }
+
+  .faq-item {
+    margin-left: 20px; /* Reduced margins for mobile */
+    margin-right: 20px;
+    margin-bottom: 0; /* Gap handled by parent */
+    font-size: 20px; /* Smaller font size for mobile */
+    padding-bottom: 5px;
+  }
+
+  .faq-question {
+    font-size: 20px; /* Smaller font size for mobile */
+    padding: 10px; /* Reduced padding */
+    padding-top: 20px;
+    text-align: left;
+  }
+
+  .faq-answer-content {
+    font-size: 16px; /* Smaller font size for mobile */
+    padding: 10px; /* Reduced padding */
+  }
+}
+
 /* About Section Styles */
 .about {
   background-color: #F9FAFB;
@@ -600,6 +821,54 @@ body::-webkit-scrollbar {
   font-weight: 400;
 }
 
+/* Mobile Responsiveness for About */
+@media (max-width: 768px) {
+  .about {
+    padding: 30px 0; /* Reduced padding for mobile, overriding the commented-out value */
+  }
+
+  .about-container {
+    flex-direction: column; /* Stack image and text vertically */
+    gap: 30px; /* Spacing between image and text */
+    margin: 0 auto; /* Ensure centering if not already set */
+  }
+
+  .about-image {
+    max-width: 100%; /* Nearly full width for mobile */
+  }
+
+  .about-image img {
+    width: 100%; /* Fit within container, avoid overflow */
+    object-fit: cover; /* Ensure image fits without distortion */
+    display: block
+  }
+
+  .about-text {
+    max-width: 100%; /* Full width for mobile */
+    padding-left: 20px; /* Reduced padding */
+    padding-right: 20px;
+    text-align: center; /* Center text */
+  }
+
+  .about-text blockquote {
+    font-size: 24px; /* Smaller font size for mobile */
+    line-height: 1.6; /* Adjusted line height */
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .about-text .about-author {
+    font-size: 18px; /* Smaller font size for mobile */
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .about-text .about-title {
+    font-size: 18px; /* Smaller font size for mobile */
+    text-align: left;
+  }
+}
+
 /* Footer Section Styles */
 .footer {
   background-color: #1b1a1a; /* Black background */
@@ -640,13 +909,13 @@ body::-webkit-scrollbar {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  font-family: "Bricolage Grotesque";
+  font-family: "Bricolage Grotesque", sans-serif;
 }
 
 .footer-info-item p {
   font-size: 18px;
   font-weight: 400;
-  font-family: "Source Sans 3";
+  font-family: "Source Sans 3", sans-serif;
 }
 
 .footer-info-item a {
@@ -708,7 +977,7 @@ body::-webkit-scrollbar {
   color: #fff;
   text-decoration: none;
   font-size: 16px;
-  font-family: "Source Sans 3";
+  font-family: "Source Sans 3", sans-serif;
   font-weight: 600;
 }
 
@@ -762,6 +1031,126 @@ body::-webkit-scrollbar {
 .time {
   margin-left: 20px;
 }
+
+/* Mobile Responsiveness for Footer */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0; /* Reduced padding for mobile */
+  }
+
+  .footer-top {
+    padding: 0 1rem;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    align-items: flex-start; /* Left-align items */
+    text-align: left; /* Left-align text */
+    gap: 2rem; /* Spacing between items */
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-info-item {
+    margin-left: 0; /* Remove desktop margin */
+    margin-bottom: 0; /* Gap handled by parent */
+    flex-direction: row; /* Keep icon and text in a row */
+    align-items: flex-start;
+  }
+
+  .footer-icon {
+    width: 32px; /* Larger icons for mobile */
+    height: 32px;
+  }
+
+  .footer-info-item h3 {
+    font-size: 1.2rem; /* Slightly larger for mobile */
+  }
+
+  .footer-info-item p {
+    font-size: 1rem; /* Adjusted for readability */
+  }
+
+  .time {
+    margin-left: 0; /* Remove margin for mobile */
+    padding-left: 20px;
+  }
+
+  .footer-divider {
+    max-width: 90%; /* Slightly narrower for mobile */
+    margin: 1.5rem auto;
+  }
+
+  .footer-bottom {
+    padding: 0 1rem;
+  }
+
+  .footer-bottom-container {
+    flex-direction: column;
+    align-items: flex-start; /* Left-align content */
+    text-align: left; /* Left-align text */
+    gap: 2rem; /* Increased spacing between sections */
+  }
+
+  .footer-brand {
+    margin: 0 auto; /* Center the logo */
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 100px; /* Smaller logo for mobile */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 350px;
+  }
+
+  .footer-links {
+    margin-bottom: 0;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    gap: 1rem; /* Spacing between links */
+    margin-left: 0; /* Remove desktop margin */
+    margin-top: 0;
+  }
+
+  .footer-links li a {
+    font-size: 1.1rem; /* Larger for touch targets */
+  }
+
+  .footer-social {
+    text-align: left; /* Left-align social section */
+  }
+
+  .footer-social h3 {
+    font-size: 1.2rem; /* Slightly larger for mobile */
+  }
+
+  .social-icons {
+    justify-content: flex-start; /* Left-align icons */
+    gap: 1.5rem; /* More spacing for touch targets */
+  }
+
+  .social-icon {
+    width: 40px; /* Larger icons for mobile */
+    height: 40px;
+    padding: 8px;
+  }
+
+  .footer-copyright {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .footer-copyright p {
+    font-size: 0.9rem;
+  }
+
+  .footer-designed {
+    gap: 0.25rem;
+  }
+}
+
 
 /* .uppist-icon {
   width: 16px;

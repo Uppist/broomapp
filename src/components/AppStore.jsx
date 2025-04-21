@@ -9,7 +9,7 @@ const AppStore = () => {
       <div className="appstore-container">
         {/* Text Content */}
         <div className="appstore-text">
-          <h2>The Broom App simplifies access to on-demand cleaning services, making it more convenient for every user.</h2>
+          <h2>The Broom App simplifies access to on-demand cleaning services, making it more convenient for everyday users.</h2>
           <p>We’ll love to let you know once we’ve launched!</p>
           <button className="join-waitlist-btn">Join Waitlist</button>
           <div className="store-buttons">

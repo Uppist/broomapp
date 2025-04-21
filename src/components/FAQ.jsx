@@ -35,11 +35,21 @@ const FAQ = () => {
         <div className="faq-list">
           {faqs.map((faq, index) => (
             <div key={index} className="faq-item">
-              <div className="faq-question">
+              <div
+                className="faq-question"
+                onClick={() => toggleFAQ(index)} // Moved onClick to the entire question area
+                role="button" // Add role for accessibility
+                tabIndex={0} // Make focusable for keyboard navigation
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    toggleFAQ(index); // Support keyboard toggle
+                    e.preventDefault();
+                  }
+                }}
+              >
                 <span>{faq.question}</span>
                 <button
                   className="faq-toggle"
-                  onClick={() => toggleFAQ(index)}
                   aria-expanded={openIndex === index}
                   aria-controls={`faq-answer-${index}`}
                 >
