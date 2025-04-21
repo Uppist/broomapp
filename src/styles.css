@@ -500,6 +500,8 @@ body::-webkit-scrollbar {
   .benefits-text p {
     font-size: 18px; /* Smaller font size for mobile */
     line-height: 24px; /* Adjusted line height */
+    width: 265px;
+    text-align: justify;
   }
 
   .benefits-image {
