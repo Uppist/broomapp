@@ -384,8 +384,9 @@ body::-webkit-scrollbar {
   }
 
   .features-container h2 {
-    font-size: 25px; /* Smaller font size for mobile */
+    font-size: 20px; /* Smaller font size for mobile */
     margin-bottom: 30px; /* Reduced margin */
+    text-align: center;
   }
 
   .features-grid {
