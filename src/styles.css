@@ -275,21 +275,23 @@ body::-webkit-scrollbar {
   }
 
   .hero-text h1 {
-    font-size: 35px; /* Smaller font size to fit */
+    font-size: 40px; /* Smaller font size to fit */
     line-height: 40px; /* Adjusted line height */
     margin-bottom: 0; /* Controlled by flex gap */
     margin-top: 150px;
     text-align: left;
-    padding: 0 50px;
+    padding-right: 20px;
+    padding-left: 23px;
   }
 
   .hero-text p {
-    font-size: 16px; /* Smaller font size to fit */
+    font-size: 18px; /* Smaller font size to fit */
     color: #6B7280; /* Darker gray as per design */
     line-height: 20px; /* Adjusted line height */
     margin-bottom: 0; /* Controlled by flex gap */
     text-align: left;
-    padding: 10px 50px;
+    padding: 10px 25px;
+    width: 350px;
   }
 
   .hero-text .join-waitlist-btn {
@@ -299,7 +301,7 @@ body::-webkit-scrollbar {
     font-size: 16px; /* Smaller font size to fit */
     font-weight: 700;
     border-radius: 10px;
-    margin-left: 50px;
+    margin-left: 26px;
     display: block; /* Ensure button is block-level for centering */
     height: 50px;
   }
@@ -379,12 +381,17 @@ body::-webkit-scrollbar {
     padding: 50px 20px; /* Reduced padding for mobile */
   }
 
+  .feature-icon {
+    width: 35px;
+    height: 35px;
+  }
+
   .features-container {
     padding: 10px 20px; /* Reduced side padding for mobile */
   }
 
   .features-container h2 {
-    font-size: 20px; /* Smaller font size for mobile */
+    font-size: 22px; /* Smaller font size for mobile */
     margin-bottom: 30px; /* Reduced margin */
     text-align: center;
   }
@@ -401,6 +408,7 @@ body::-webkit-scrollbar {
 
   .feature-item p {
     color: #667085; /* Gray color as per design */
+    font-size: 15.5px;
   }
 }
 
