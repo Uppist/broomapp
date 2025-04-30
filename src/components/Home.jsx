@@ -9,7 +9,13 @@ const Home = () => {
         <div className="hero-text">
           <h1>Find vetted and trusted cleaning service providers nearest to you.</h1>
           <p>Our platform instantly connects individuals in need of cleaning services with trusted, thoroughly vetted providers.</p>
-          <button className="join-waitlist-btn">Join Waitlist</button>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeBkICxa-qhgs9yWX2sVB8-DnfIsLaXb7Vny-HmxeT0ClS_iw/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="join-waitlist-btn">Join Waitlist</button>
+          </a>
         </div>
 
         {/* iPhone Image */}

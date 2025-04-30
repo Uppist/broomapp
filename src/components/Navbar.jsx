@@ -49,7 +49,13 @@ const Navbar = () => {
 
         {/* Join Waitlist Button (visible on desktop, hidden on mobile unless menu is open) */}
         <div className={`navbar-button ${isMenuOpen ? 'navbar-button-open' : ''}`}>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeBkICxa-qhgs9yWX2sVB8-DnfIsLaXb7Vny-HmxeT0ClS_iw/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button className="join-waitlist-btn">Join Waitlist</button>
+        </a>
         </div>
       </div>
     </nav>

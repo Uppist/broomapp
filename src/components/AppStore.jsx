@@ -11,7 +11,13 @@ const AppStore = () => {
         <div className="appstore-text">
           <h2>The Broom App simplifies access to on-demand cleaning services, making it more convenient for everyday users.</h2>
           <p>We’ll love to let you know once we’ve launched!</p>
-          <button className="join-waitlist-btn">Join Waitlist</button>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeBkICxa-qhgs9yWX2sVB8-DnfIsLaXb7Vny-HmxeT0ClS_iw/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="join-waitlist-btn">Join Waitlist</button>
+          </a>
           <div className="store-buttons">
             <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
               <img src={appStoreButton} alt="Download on the App Store" className="store-button" />
