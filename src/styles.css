@@ -367,6 +367,10 @@ body::-webkit-scrollbar {
   margin-bottom: 16px;
 }
 
+.service-mobile{
+  display: none;
+}
+
 .features-content {
   display: flex;
   justify-content: center;
@@ -420,22 +424,42 @@ body::-webkit-scrollbar {
   }
 
   .headings-row {
+    flex-direction: column;
     gap: 1rem;
   }
 
   .headings-row h3 {
-    font-size: 18.5px;
-    color: #000000;
+    font-size: 18px;
+    color: #008080;
+  }
+
+  .service {
+    display: none;
+  }
+
+  .service-mobile {
+    font-size: 18px;
+    color: #008080;
+    font-weight: 700;
+    line-height: 100%;
+    font-family: "Source Sans 3";
+    display: inline;
   }
 
   .features-content {
     flex-direction: column;
-    gap: 30px;
+    gap: 24px;
+  }
+
+  .feature-column ul {
+    padding-left: 24px;
   }
 
   .feature-column li {
-    font-size: 15.5px;
-    color: #333;
+    font-size: 16px;
+    line-height: 120%;
+    color: #52525B;
+    margin-bottom: 8px;
   }
 
   .divider {

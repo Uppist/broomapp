@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Features = () => {
   const consumersFeatures = [
     'On-demand access to different types of cleaning services',
@@ -18,8 +20,8 @@ const Features = () => {
         <h2>Discover Our Key Features</h2>
         <div className="features-grid">
           <div className="headings-row">
-            <h3 className="consumers">For Consumers:</h3>
-            <h3>For Service Providers:</h3>
+            <h3>For Consumers:</h3>
+            <h3 className='service'>For Service Providers:</h3>
           </div>
           <div className="features-content">
             <div className="feature-column">
@@ -30,6 +32,7 @@ const Features = () => {
               </ul>
             </div>
             <div className="divider"></div>
+            <span className="service-mobile"> For Service Providers: </span>
             <div className="feature-column">
               <ul>
                 {providersFeatures.map((feature, index) => (
