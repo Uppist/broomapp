@@ -1,24 +1,15 @@
-import React from 'react';
-import icon from '../assets/icon.jpg'; // Import the icon image
-
 const Features = () => {
-  const featuresList = [
-    {
-      title: 'On-demand cleaning services',
-      description: '',
-    },
-    {
-      title: 'Access to various types of cleaning services.',
-      description: '',
-    },
-    {
-      title: 'Geolocation-enabled architecture so that you find service providers closest to you.',
-      description: 'This in turn helps you save money as you do not need to pay more for long-distance providers.',
-    },
-    {
-      title: 'Rewards-based system that celebrates milestones',
-      description: '',
-    },
+  const consumersFeatures = [
+    'On-demand access to different types of cleaning services',
+    'Geolocation-enabled architecture that helps you find service providers closest to you, thus saving on costs',
+    'Rewards-based system that celebrates milestones',
+    'Streamlined in-app transactions, payment and more',
+  ];
+
+  const providersFeatures = [
+    'Geolocation-enabled architecture to help find customers closest to you',
+    'Rewards-based system that celebrates milestones',
+    'Streamlined in-app transactions, payment and more',
   ];
 
   return (
@@ -26,15 +17,27 @@ const Features = () => {
       <div className="features-container">
         <h2>Discover Our Key Features</h2>
         <div className="features-grid">
-          {featuresList.map((feature, index) => (
-            <div key={index} className="feature-item">
-              <img src={icon} alt="Feature Icon" className="feature-icon" />
-              <div className='disk'>
-              <h3>{feature.title}</h3>
-              {feature.description && <p>{feature.description}</p>}
-              </div>
+          <div className="headings-row">
+            <h3 className="consumers">For Consumers:</h3>
+            <h3>For Service Providers:</h3>
+          </div>
+          <div className="features-content">
+            <div className="feature-column">
+              <ul>
+                {consumersFeatures.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
             </div>
-          ))}
+            <div className="divider"></div>
+            <div className="feature-column">
+              <ul>
+                {providersFeatures.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
