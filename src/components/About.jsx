@@ -3,7 +3,7 @@ import ceoImage from '../assets/ceo.jpg';
 
 const About = () => {
   return (
-    <section className="about">
+    <section id="about" className="about">
       <div className="about-container">
         <div className="about-image">
           <img src={ceoImage} alt="Alfred Daboner, Founder & CEO" />

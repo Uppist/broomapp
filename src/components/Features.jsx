@@ -5,7 +5,7 @@ const Features = () => {
     'On-demand access to different types of cleaning services',
     'Geolocation-enabled architecture that helps you find service providers closest to you, thus saving on costs',
     'Rewards-based system that celebrates milestones',
-    'Streamlined in-app transactions, payment and more',
+    'Streamlines in-app transactions, payment and more',
   ];
 
   const providersFeatures = [

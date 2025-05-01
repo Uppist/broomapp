@@ -33,7 +33,7 @@ const Footer = () => {
             <div>
               <h3>Work Hours</h3>
               <p>Monday to Friday</p>
-              <p className="time">8am–4pm</p>
+              <p className="time">8am–5pm</p>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ const Footer = () => {
             <ul>
               <li><a href="#home">Home</a></li>
               <li><a href="#features">Features</a></li>
-              <li><a href="#benefits">Benefits</a></li>
+              <li><a href="#about">About</a></li>
               <li><a href="#faq">FAQ</a></li>
             </ul>
           </div>
