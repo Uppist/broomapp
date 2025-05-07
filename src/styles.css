@@ -428,6 +428,7 @@ body::-webkit-scrollbar {
 /* Mobile Responsiveness for Features */
 @media (max-width: 768px) {
   .features {
+    color: #F8FFFF;
     /* padding: 50px 20px; */
     padding: 100px 0;
     background-size: 40vw, 40vw; /* Smaller image sizes */
