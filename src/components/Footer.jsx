@@ -26,6 +26,7 @@ const Footer = () => {
             <div>
               <h3>Contact</h3>
               <p>Email: <a href="mailto:info@thebroomapp.com">info@thebroomapp.com</a></p>
+              <p>Phone: +2349137454110</p>
             </div>
           </div>
           <div className="footer-info-item">
@@ -33,7 +34,7 @@ const Footer = () => {
             <div>
               <h3>Work Hours</h3>
               <p>Monday to Friday</p>
-              <p className="time">8am–5pm</p>
+              <p className="time">9am–5pm</p>
             </div>
           </div>
         </div>

@@ -9,9 +9,10 @@ const Features = () => {
   ];
 
   const providersFeatures = [
-    'Geolocation-enabled architecture to help find customers closest to you',
-    'Rewards-based system that celebrates milestones',
-    'Streamlined in-app transactions, payment and more',
+    'Service visibility ensuring customers can easily find and book the right service.',
+    'Geolocation-enabled architecture to help find customers closest to you, optimizing your reach and response time.',
+    'Rewards-based system that celebrates milestones as you hit key performance targets.',
+    'Seamless In-App Reconciliation: Track and reconcile earnings per job effortlessly within the app, saving you time and reducing administrative hassle.',
   ];
 
   return (

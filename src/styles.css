@@ -321,9 +321,13 @@ body::-webkit-scrollbar {
 
 /* Features Section Styles */
 .features {
-  background-color: #fff;
-  padding: 4rem 0;
+  background-color: #F8FFFF;
+  padding: 150px 0;
   width: 100%;
+  background-image: url("../src/assets/features-bg.png"), url("../src/assets/features-bg2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, 995px bottom;
+  background-size: 350px, 350px;
 }
 
 .features-container {
@@ -358,7 +362,7 @@ body::-webkit-scrollbar {
 }
 
 .headings-row h3 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 100%;
   color: #008080;
@@ -367,7 +371,7 @@ body::-webkit-scrollbar {
   margin-bottom: 16px;
 }
 
-.service-mobile{
+.service-mobile {
   display: none;
 }
 
@@ -383,7 +387,7 @@ body::-webkit-scrollbar {
 }
 
 .feature-column ul {
-  list-style-type: disc;
+  list-style-type: none; /* Remove default bullets */
   padding-left: 24px;
   font-family: "Source Sans 3";
   font-weight: 600;
@@ -394,23 +398,40 @@ body::-webkit-scrollbar {
 
 .feature-column li {
   font-family: "Source Sans 3";
-  font-weight: 600;
-  font-size: 24px;
+  font-weight: 500;
+  font-size: 23px;
   line-height: 100%;
   color: #52525B;
-  margin-bottom: 8px;
+  margin-bottom: 18px;
+  position: relative; /* For positioning the ::before pseudo-element */
+  padding-left: 32px; /* Space for the tick icon */
+}
+
+.feature-column li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px; /* Adjust vertical alignment */
+  width: 24px; /* Adjust based on your icon size */
+  height: 24px; /* Adjust based on your icon size */
+  background-image: url("../src/assets/tick.svg");
+  background-size: initial;
+  background-repeat: no-repeat;
 }
 
 .divider {
   width: 3px;
-  height: 200px;
+  height: 250px;
   background-color: #EAE5E5;
 }
 
 /* Mobile Responsiveness for Features */
 @media (max-width: 768px) {
   .features {
-    padding: 50px 20px;
+    /* padding: 50px 20px; */
+    padding: 100px 0;
+    background-size: 40vw, 40vw; /* Smaller image sizes */
+    background-position: top left, 85% bottom;
   }
 
   .features-container {
@@ -460,6 +481,13 @@ body::-webkit-scrollbar {
     line-height: 120%;
     color: #52525B;
     margin-bottom: 8px;
+    padding-left: 28px; /* Slightly smaller padding for mobile */
+  }
+
+  .feature-column li::before {
+    width: 20px; /* Smaller icon for mobile */
+    height: 20px;
+    top: 2px;
   }
 
   .divider {
