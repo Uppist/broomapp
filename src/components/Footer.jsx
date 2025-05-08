@@ -74,7 +74,10 @@ const Footer = () => {
         <div className="footer-copyright">
           <p>© The BroomApp 2025 All Rights Reserved.</p>
           <p className="footer-designed">
-            designed by <img src={uppistIcon} alt="Uppist" className="uppist-icon" />
+            designed by{' '}
+            <a href="http://www.uppist.xyz/" target="_blank" rel="noopener noreferrer">
+              <img src={uppistIcon} alt="Uppist" className="uppist-icon" />
+            </a>
           </p>
         </div>
       </div>
