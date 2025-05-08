@@ -1401,15 +1401,15 @@ body::-webkit-scrollbar {
 }
 
 .uppist-icon {
-  width: 75px;
-  height: 23px;
+  width: 61px;
+  height: 18px;
 }
 
 /* Mobile Responsiveness for Footer */
 @media (max-width: 768px) {
   .footer {
     padding: 2rem 0; /* Reduced padding for mobile */
-    padding-bottom: 150px;
+    padding-bottom: 100px;
   }
 
   .footer-top {
@@ -1524,8 +1524,8 @@ body::-webkit-scrollbar {
     gap: 0.25rem;
   }
   .uppist-icon {
-    width: 69px;
-    height: 21px;
+    width: 58px;
+    height: 17px;
   }
 }
 
