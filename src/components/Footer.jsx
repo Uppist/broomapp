@@ -56,7 +56,7 @@ const Footer = () => {
           <div className="footer-social">
             <h3>Connect with us</h3>
             <div className="social-icons">
-              <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/profile.php?id=61576197728670&mibextid=ZbWKwL " target="_blank" rel="noopener noreferrer">
                 <img src={facebookIcon} alt="Facebook" className="social-icon" />
               </a>
               <a href="https://google.com" target="_blank" rel="noopener noreferrer">
@@ -65,7 +65,7 @@ const Footer = () => {
               <a href="https://google.com" target="_blank" rel="noopener noreferrer">
                 <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
               </a>
-              <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/the_broomapp?igsh=MTlza2N0MHo0b3A2bw==" target="_blank" rel="noopener noreferrer">
                 <img src={instagramIcon} alt="Instagram" className="social-icon" />
               </a>
             </div>
