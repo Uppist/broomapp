@@ -62,7 +62,7 @@ const Footer = () => {
               <a href="https://google.com" target="_blank" rel="noopener noreferrer">
                 <img src={xIcon} alt="X" className="social-icon" />
               </a>
-              <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/thebroomapp/ " target="_blank" rel="noopener noreferrer">
                 <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
               </a>
               <a href="https://www.instagram.com/the_broomapp?igsh=MTlza2N0MHo0b3A2bw==" target="_blank" rel="noopener noreferrer">
