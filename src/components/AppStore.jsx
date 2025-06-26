@@ -19,10 +19,10 @@ const AppStore = () => {
             <button className="join-waitlist-btn">Join Waitlist</button>
           </a>
           <div className="store-buttons">
-            <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBkICxa-qhgs9yWX2sVB8-DnfIsLaXb7Vny-HmxeT0ClS_iw/viewform" target="_blank" rel="noopener noreferrer">
               <img src={appStoreButton} alt="Download on the App Store" className="store-button" />
             </a>
-            <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBkICxa-qhgs9yWX2sVB8-DnfIsLaXb7Vny-HmxeT0ClS_iw/viewform" target="_blank" rel="noopener noreferrer">
               <img src={googlePlayButton} alt="Get it on Google Play" className="store-button" />
             </a>
           </div>
